@@ -12,6 +12,19 @@ class CategorySeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        $categories = [
+            'curtains and  tulles',
+            'clothes fabrics',
+            'furniture fabrics',
+            'bed fabrics',
+            'new_year',
+        ];
+
+        foreach($categories as $category) {
+            Category::create([
+                'name' => $category,
+                'slug' => str($category)->slug(),
+            ]);
+        }
     }
 }
