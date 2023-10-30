@@ -16,10 +16,11 @@ class FabricFactory extends Factory
      */
     public function definition(): array
     {
-        $fabric = Fabric::factory()->count(15)->create();
+        $fabric = DB::table('fabrics')->;
 
         return [
-            'fabric' => $fabric,
+            'fabric_id' => $fabric->id,
+            'slug' => str()->random(10),
         ];
     }
 }
