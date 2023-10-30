@@ -15,6 +15,9 @@ class DatabaseSeeder extends Seeder
         $this->call([
             FabricSeeder::class,
             CategorySeeder::class,
+            FabricTextureSeeder::class,
+            FabricTypesSeeder::class,
+            ColorSeeder::class,
         ]);
 
         \App\Models\Fabric::factory(85)->create();

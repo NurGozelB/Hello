@@ -11,7 +11,6 @@ class Country extends Model
 
     protected $guarded = ['id'];
 
-
     public function Fabric(): HasMany
     {
         return $this->hasMany(Fabric::class);

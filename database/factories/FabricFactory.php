@@ -16,8 +16,10 @@ class FabricFactory extends Factory
      */
     public function definition(): array
     {
+        $fabric = Fabric::factory()->count(15)->create();
+
         return [
-            //
+            'fabric' => $fabric,
         ];
     }
 }
