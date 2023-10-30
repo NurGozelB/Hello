@@ -11,6 +11,11 @@ class fabricTexture extends Model
 
     protected $guarded = ['id'];
 
+    public static function create($array)
+    {
+        //
+    }
+
     public function Fabric(): HasMany
     {
         return $this->hasMany(Fabric::class);

@@ -11,6 +11,11 @@ class Category extends Model
 
     protected $guarded = ['id'];
 
+    public static function create($array)
+    {
+        //
+    }
+
 
     public function Delivery(): HasMany
     {
