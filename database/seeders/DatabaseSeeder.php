@@ -13,10 +13,9 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         $this->call([
-            FabricSeeder::class,
             CategorySeeder::class,
             FabricTextureSeeder::class,
-            FabricTypesSeeder::class,
+            FabricTypeSeeder::class,
             ColorSeeder::class,
         ]);
 

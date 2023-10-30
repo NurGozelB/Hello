@@ -12,12 +12,12 @@ class FabricTypeSeeder extends Seeder
      */
     public function run(): void
     {
-        $fabricType = ['plain', 'colorfull', 'checked', 'woven'];
+        $fabricTypes = ['plain', 'colorfull', 'checked', 'woven'];
 
-        foreach ($fabricType as $fabricTypes) {
-            FabricTypes::create([
-                'name' => $FabricTypes,
-                'slug' => str($FabricTypes)->slug(),
+        foreach ($fabricTypes as $fabricType) {
+            FabricType::create([
+                'name' => $FabricType,
+                'slug' => str($FabricType)->slug(),
             ]);
         }
     }
