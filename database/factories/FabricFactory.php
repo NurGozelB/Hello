@@ -16,7 +16,7 @@ class FabricFactory extends Factory
      */
     public function definition(): array
     {
-        $fabric = DB::table('fabrics')->;
+        $fabric = DB::table('fabrics')->inRandomOrder()->count(15);
 
         return [
             'fabric_id' => $fabric->id,
