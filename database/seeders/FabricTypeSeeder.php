@@ -17,10 +17,9 @@ class FabricTypeSeeder extends Seeder
         $fabricTypes = ['plain', 'colorfull', 'checked', 'woven'];
 
         foreach ($fabricTypes as $fabricType) {
-            $FabricType = $fabricTypes;
             FabricType::create([
-                'name' => $FabricType,
-                'slug' => str($FabricType)->slug(),
+                'name' => $fabricType,
+                'slug' => str($fabricType)->slug(),
             ]);
         }
     }
